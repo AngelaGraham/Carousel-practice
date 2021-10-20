@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --navWidth: 250px;
+}
+
+body{
+    margin: 0;
+    padding-left: 40px;
+}
+
+nav{
+    position: fixed;
+    left: calc(-1 * var(--navWidth) + 40px);
+    width: var(--navWidth);
+    height: 100vh;
+    background: #111;
+    transition: left .15s;
+    color:white;
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+nav a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    transition: .15s;
+}
+
+nav a:hover{
+    transform: scale(1.15);
+}
+
+
+#navToggle:checked + nav{
+    left: 0px;
+}
+
+label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 20px;
+    font-size: 15px;
+    text-align: right;
+}
+
+/* #navToggle:checked + nav .right,
+.left{
+    display: none;
+}
+
+.right,
+#navToggle:checked + nav .left{
+    display: block;
+} */
+
+.right{
+    display: block;
+    transform: rotate(0deg);
+    transition: transform .15s;
+}
+
+#navToggle:checked + nav .right{
+    transform: rotate(180deg);
+}
+
+
+input[type=checkbox]{
+    display: none;
+}
+
+.carousel-item{
+    height:100vh;
+    min-height:300px;
+    background:no-repeat scroll center;
+}
+.carousel-caption{
+    bottom:180px;
+    padding-left:100px
+    
+}
+.carousel-caption h5{
+    font-size: 50px;
+    font-family: serif;
+   
+}
+
+  
+  h5 {
+    color:rgb(245, 250, 248);
+    
+  }
+
+h1{
+    margin:5px;
+}
+p{
+    font-size: 20px;
+}
+main{
+    max-width: 1000px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+}
+

@@ -7,11 +7,102 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    
 
-    <title>Hello, world!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <title>Carousel Practice</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <input type="checkbox" id="navToggle">
+
+  <nav>
+    <label for="navToggle">
+      <!-- <span class="left">&#129120</span> -->
+      <span class="right">&#129122;</span>
+    </label>
+
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Shop</a>
+  </nav>
+
+  <main>
+    <h1></h1>
+  </main>
+
+    <h1>Carousel Practice!</h1>
+    <div class="row">
+      <div class="container-fluid">
+       
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/8664789/pexels-photo-8664789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Vatican City</h5>
+                <p>Christian</p>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/4118038/pexels-photo-4118038.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mecca</h5>
+                <p>Islam</p>
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/8446694/pexels-photo-8446694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=500" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Western Wall</h5>
+                <p>Judism</p>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/940634/pexels-photo-940634.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Buddist Temple</h5>
+                <p>Buddism</p>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/6667281/pexels-photo-6667281.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hindu Temple</h5>
+                <p>Hinduism</p>
+               
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+         
+      </div>
+    </div>
+  
 
     <!-- Optional JavaScript; choose one of the two! -->
 
